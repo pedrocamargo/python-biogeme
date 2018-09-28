@@ -37,7 +37,7 @@ docker image
 As each person would have different workflows  
 
 In the example below, the directory that holds all files is
-**D:/Project/Destination_choice/HBW/specification1**
+**D:\my_folder**
 
 
 
