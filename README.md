@@ -8,7 +8,7 @@ properly on unix-based systems.
 
 As a consequence, the workflow had become unecessarily convoluted, and a better
 alternative was needed. Due to the workflow and experimentation process we
-had chosen, wereached a 
+had chosen, wereached a
 
 
 The goals of this repository are twofold:
@@ -42,7 +42,12 @@ In the example below, the directory that holds all files is
 
 
 To run the estimation
-sudo docker run -v D:/Project/Destination_choice/HBW/specification1:/tmp/mr -w /tmp/mr biogeme pythonbiogeme estimate dataset.csv
+sudo docker run -v D:/my_folder:/tmp/mr -w /tmp/mr biogeme pythonbiogeme estimate dataset.csv
+
+On Windows, double slashes on the Linux paths are needed
+
+sudo docker run -v D:/my_folder://tmp/mr -w //tmp/mr biogeme pythonbiogeme estimate dataset.csv
+
 
 This assumes that you built your docker image using
 
