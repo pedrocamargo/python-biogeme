@@ -37,10 +37,24 @@ However, if you are not working on Windows, you will need a single **/** after t
 
 **docker run -v D:/BIOGEME:/tmp/mr -w /tmp/mr biogeme pythonbiogeme estimate dataset.dat**
 
-# A more complete documentation
+
+# A workable example
+
+In order to create a meaningful example of how one could use Biogeme on Docker, I decided to use the examples
+provided in the [Biogeme webpage](http://biogeme.epfl.ch/examples_swissmetro.html).
+
+The scenario we are working with is the following: We want to run all the models that exist there and save them in 
+individual folders, with all the estimation/run outputs.
+
+In order to do that, the user would clone/download this repository and run the "estimate_all_examples.py" file
+This piece of code moves all estimation scripts into subfolder named after the estimation scripts themselves
+and creates a batch file that can be run to run all biogeme examples in a sequence without interruptions.
+
+# A more complete overview
 
 For a better overview of what motivated the creation of this repo, you can go to 
-[my blog.](http://www.xl-optim.com/biogeme-docker)
+[my blog.](http://www.xl-optim.com/biogeme-docker)  There you will find a link to some references and to a video
+tutorial where I go over the entire process.
 
 
 
